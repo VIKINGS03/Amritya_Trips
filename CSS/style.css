@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;   
+}
+#navbar #company{
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    margin: 0px 0px;
+    padding-left: 0rem; 
+    padding-right: 2rem;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0px 5px;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Balthazar', serif;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Logo & Logo Image */
+#logo{
+    margin: 0px 0px;
+    padding: 5px 10px;
+}
+#logo img{
+    filter: invert(100%);
+    height: 2.6rem;
+    width: 2.6rem;
+    margin: 0px 0px;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 17rem;
+    height: 24rem;
+}
+#home::before{
+    content: "";
+    position:absolute;
+    background: url("../Images/back.jpg")no-repeat center center/cover;
+    height: 29rem;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#home p{
+    color: white;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 8px 0px;
+    font-family: 'Balthazar', serif;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    border: 2px solid brown;
+    height: 20rem;
+    width: 20rem;
+    padding: 15px 15px;
+    margin: 5px 5px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+#services .box img{
+    display: block;
+    height: 10rem;
+    margin: auto;
+}
+#services .box p{
+    text-align: justify;
+    font-family: 'Balthazar', serif;
+}
+
+/* Clients Section */
+#client-section{
+    position: relative;
+    height: 25rem;
+    border: none;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../Images/back_2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+}
+.client-item{
+    height: 6rem;
+    margin: 0px 34px;
+    padding: 0px 0px;
+}
+#item1 img{
+    height: 7.5rem;
+    width: 15rem;
+}
+#item2 img{
+    height: 7.5rem;
+    width: 15rem;
+}
+#item3 img{
+    height: 7.5rem;
+    width: 15rem;
+}
+#item4 img{
+    height: 7.5rem;
+    width: 15rem;
+}
+#item5 img{
+    height: 7.5rem;
+    width: 15rem;
+}
+#item1{
+    align-self: flex-start;
+}
+#item2{
+    align-self: flex-end;
+}
+#item3{
+    align-self: flex-start;
+}
+#item4{
+    align-self: flex-end;
+}
+#item5{
+    align-self: flex-start;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../Images/contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Balthazar', serif;
+}
+
+/* Footer Section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utilities Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 5px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 15px 0px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: rgb(156, 40, 40);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(128, 31, 31);
+}
+.center{
+    text-align: center;
+}
